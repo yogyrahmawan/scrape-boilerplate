@@ -84,7 +84,7 @@ func main() {
 	jar.SetCookies(u, bow.SiteCookies())
 	bow.SetCookieJar(jar)
 
-	// print newsfeed
+	// print blue
 	bow.Find("div#pagelet_bluebar").Each(func(_ int, s *goquery.Selection) {
 		fmt.Println(s.Text())
 	})
